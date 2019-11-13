@@ -1,0 +1,10 @@
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\bin\Debug\BookRoom_Manage.exe.config
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\bin\Debug\BookRoom_Manage.exe
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\bin\Debug\BookRoom_Manage.pdb
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.csprojAssemblyReference.cache
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.Form1.resources
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.Properties.Resources.resources
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.csproj.GenerateResource.cache
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.csproj.CoreCompileInputs.cache
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.exe
+D:\Tai lieu\BookRoom_Manage\BookRoom_Manage\obj\Debug\BookRoom_Manage.pdb
