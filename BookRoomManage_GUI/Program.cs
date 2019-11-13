@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookRoom_Manage
+namespace BookRoomManage_GUI
 {
     static class Program
     {

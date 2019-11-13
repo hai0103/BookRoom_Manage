@@ -1,4 +1,4 @@
-﻿namespace BookRoom_Manage
+﻿namespace BookRoomManage_GUI
 {
     partial class Form1
     {
@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl_mainHandler = new System.Windows.Forms.TabControl();
             this.tabPage_bookRoom = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_apply = new System.Windows.Forms.Button();
+            this.comboBox_priceRoom = new System.Windows.Forms.ComboBox();
+            this.comboBox_typeRoom = new System.Windows.Forms.ComboBox();
+            this.lstView_listRoom = new System.Windows.Forms.ListView();
+            this.label_priceRoom = new System.Windows.Forms.Label();
             this.label_typeRoom = new System.Windows.Forms.Label();
             this.tabPage_payment = new System.Windows.Forms.TabPage();
-            this.tabPage_usingService = new System.Windows.Forms.TabPage();
-            this.label_priceRoom = new System.Windows.Forms.Label();
-            this.lstView_listRoom = new System.Windows.Forms.ListView();
-            this.comboBox_typeRoom = new System.Windows.Forms.ComboBox();
-            this.comboBox_priceRoom = new System.Windows.Forms.ComboBox();
-            this.panel_Info = new System.Windows.Forms.Panel();
-            this.btn_apply = new System.Windows.Forms.Button();
-            this.label_title = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.lstView_listBookRoom = new System.Windows.Forms.ListView();
-            this.lstView_listService = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txt_inputSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox_typeSearch = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_inputSearch = new System.Windows.Forms.TextBox();
+            this.lstView_listBookRoom = new System.Windows.Forms.ListView();
+            this.tabPage_usingService = new System.Windows.Forms.TabPage();
+            this.lstView_listService = new System.Windows.Forms.ListView();
+            this.panel_Info = new System.Windows.Forms.Panel();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label_title = new System.Windows.Forms.Label();
             this.tabControl_mainHandler.SuspendLayout();
             this.tabPage_bookRoom.SuspendLayout();
             this.tabPage_payment.SuspendLayout();
@@ -89,6 +89,74 @@
             this.tabPage_bookRoom.TabIndex = 0;
             this.tabPage_bookRoom.Text = "Đặt phòng";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 16);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Danh sách phòng";
+            // 
+            // btn_apply
+            // 
+            this.btn_apply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_apply.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.btn_apply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Olive;
+            this.btn_apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_apply.Location = new System.Drawing.Point(686, 15);
+            this.btn_apply.Name = "btn_apply";
+            this.btn_apply.Size = new System.Drawing.Size(75, 33);
+            this.btn_apply.TabIndex = 3;
+            this.btn_apply.Text = "Apply";
+            this.btn_apply.UseVisualStyleBackColor = true;
+            // 
+            // comboBox_priceRoom
+            // 
+            this.comboBox_priceRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox_priceRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_priceRoom.FormattingEnabled = true;
+            this.comboBox_priceRoom.Location = new System.Drawing.Point(425, 20);
+            this.comboBox_priceRoom.Name = "comboBox_priceRoom";
+            this.comboBox_priceRoom.Size = new System.Drawing.Size(146, 26);
+            this.comboBox_priceRoom.TabIndex = 2;
+            // 
+            // comboBox_typeRoom
+            // 
+            this.comboBox_typeRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox_typeRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_typeRoom.FormattingEnabled = true;
+            this.comboBox_typeRoom.Items.AddRange(new object[] {
+            "Phòng phổ thông đơn",
+            "Phòng phổ thông đôi",
+            "Phòng thương gia đơn",
+            "Phòng thương gia đôi"});
+            this.comboBox_typeRoom.Location = new System.Drawing.Point(133, 20);
+            this.comboBox_typeRoom.Name = "comboBox_typeRoom";
+            this.comboBox_typeRoom.Size = new System.Drawing.Size(146, 26);
+            this.comboBox_typeRoom.TabIndex = 2;
+            // 
+            // lstView_listRoom
+            // 
+            this.lstView_listRoom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lstView_listRoom.HideSelection = false;
+            this.lstView_listRoom.Location = new System.Drawing.Point(3, 117);
+            this.lstView_listRoom.Name = "lstView_listRoom";
+            this.lstView_listRoom.Size = new System.Drawing.Size(1011, 483);
+            this.lstView_listRoom.TabIndex = 1;
+            this.lstView_listRoom.UseCompatibleStateImageBehavior = false;
+            // 
+            // label_priceRoom
+            // 
+            this.label_priceRoom.AutoSize = true;
+            this.label_priceRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_priceRoom.Location = new System.Drawing.Point(340, 25);
+            this.label_priceRoom.Name = "label_priceRoom";
+            this.label_priceRoom.Size = new System.Drawing.Size(79, 16);
+            this.label_priceRoom.TabIndex = 0;
+            this.label_priceRoom.Text = "Giá phòng";
+            // 
             // label_typeRoom
             // 
             this.label_typeRoom.AutoSize = true;
@@ -114,137 +182,13 @@
             this.tabPage_payment.TabIndex = 1;
             this.tabPage_payment.Text = "Trả phòng";
             // 
-            // tabPage_usingService
+            // txt_inputSearch
             // 
-            this.tabPage_usingService.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage_usingService.Controls.Add(this.lstView_listService);
-            this.tabPage_usingService.Location = new System.Drawing.Point(4, 29);
-            this.tabPage_usingService.Name = "tabPage_usingService";
-            this.tabPage_usingService.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_usingService.Size = new System.Drawing.Size(1017, 603);
-            this.tabPage_usingService.TabIndex = 2;
-            this.tabPage_usingService.Text = "Dịch vụ";
-            // 
-            // label_priceRoom
-            // 
-            this.label_priceRoom.AutoSize = true;
-            this.label_priceRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_priceRoom.Location = new System.Drawing.Point(340, 25);
-            this.label_priceRoom.Name = "label_priceRoom";
-            this.label_priceRoom.Size = new System.Drawing.Size(79, 16);
-            this.label_priceRoom.TabIndex = 0;
-            this.label_priceRoom.Text = "Giá phòng";
-            // 
-            // lstView_listRoom
-            // 
-            this.lstView_listRoom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lstView_listRoom.HideSelection = false;
-            this.lstView_listRoom.Location = new System.Drawing.Point(3, 117);
-            this.lstView_listRoom.Name = "lstView_listRoom";
-            this.lstView_listRoom.Size = new System.Drawing.Size(1011, 483);
-            this.lstView_listRoom.TabIndex = 1;
-            this.lstView_listRoom.UseCompatibleStateImageBehavior = false;
-            // 
-            // comboBox_typeRoom
-            // 
-            this.comboBox_typeRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox_typeRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_typeRoom.FormattingEnabled = true;
-            this.comboBox_typeRoom.Items.AddRange(new object[] {
-            "Phòng phổ thông đơn",
-            "Phòng phổ thông đôi",
-            "Phòng thương gia đơn",
-            "Phòng thương gia đôi"});
-            this.comboBox_typeRoom.Location = new System.Drawing.Point(133, 20);
-            this.comboBox_typeRoom.Name = "comboBox_typeRoom";
-            this.comboBox_typeRoom.Size = new System.Drawing.Size(146, 26);
-            this.comboBox_typeRoom.TabIndex = 2;
-            // 
-            // comboBox_priceRoom
-            // 
-            this.comboBox_priceRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox_priceRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_priceRoom.FormattingEnabled = true;
-            this.comboBox_priceRoom.Location = new System.Drawing.Point(425, 20);
-            this.comboBox_priceRoom.Name = "comboBox_priceRoom";
-            this.comboBox_priceRoom.Size = new System.Drawing.Size(146, 26);
-            this.comboBox_priceRoom.TabIndex = 2;
-            // 
-            // panel_Info
-            // 
-            this.panel_Info.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel_Info.Controls.Add(this.monthCalendar1);
-            this.panel_Info.Controls.Add(this.label_title);
-            this.panel_Info.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_Info.Location = new System.Drawing.Point(0, 0);
-            this.panel_Info.Name = "panel_Info";
-            this.panel_Info.Size = new System.Drawing.Size(231, 636);
-            this.panel_Info.TabIndex = 1;
-            // 
-            // btn_apply
-            // 
-            this.btn_apply.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_apply.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.btn_apply.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Olive;
-            this.btn_apply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_apply.Location = new System.Drawing.Point(686, 15);
-            this.btn_apply.Name = "btn_apply";
-            this.btn_apply.Size = new System.Drawing.Size(75, 33);
-            this.btn_apply.TabIndex = 3;
-            this.btn_apply.Text = "Apply";
-            this.btn_apply.UseVisualStyleBackColor = true;
-            // 
-            // label_title
-            // 
-            this.label_title.AutoSize = true;
-            this.label_title.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_title.Location = new System.Drawing.Point(59, 45);
-            this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(110, 57);
-            this.label_title.TabIndex = 0;
-            this.label_title.Text = "Hotel";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.BackColor = System.Drawing.Color.LightBlue;
-            this.monthCalendar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
-            this.monthCalendar1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.monthCalendar1.Location = new System.Drawing.Point(2, 146);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.TitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.LightSkyBlue;
-            // 
-            // lstView_listBookRoom
-            // 
-            this.lstView_listBookRoom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lstView_listBookRoom.HideSelection = false;
-            this.lstView_listBookRoom.Location = new System.Drawing.Point(3, 117);
-            this.lstView_listBookRoom.Name = "lstView_listBookRoom";
-            this.lstView_listBookRoom.Size = new System.Drawing.Size(1011, 483);
-            this.lstView_listBookRoom.TabIndex = 0;
-            this.lstView_listBookRoom.UseCompatibleStateImageBehavior = false;
-            // 
-            // lstView_listService
-            // 
-            this.lstView_listService.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lstView_listService.HideSelection = false;
-            this.lstView_listService.Location = new System.Drawing.Point(3, 117);
-            this.lstView_listService.Name = "lstView_listService";
-            this.lstView_listService.Size = new System.Drawing.Size(1011, 483);
-            this.lstView_listService.TabIndex = 0;
-            this.lstView_listService.UseCompatibleStateImageBehavior = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Danh sách phòng";
+            this.txt_inputSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_inputSearch.Location = new System.Drawing.Point(327, 30);
+            this.txt_inputSearch.Name = "txt_inputSearch";
+            this.txt_inputSearch.Size = new System.Drawing.Size(173, 24);
+            this.txt_inputSearch.TabIndex = 7;
             // 
             // button1
             // 
@@ -283,13 +227,69 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Tìm kiếm theo";
             // 
-            // txt_inputSearch
+            // lstView_listBookRoom
             // 
-            this.txt_inputSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_inputSearch.Location = new System.Drawing.Point(327, 30);
-            this.txt_inputSearch.Name = "txt_inputSearch";
-            this.txt_inputSearch.Size = new System.Drawing.Size(173, 24);
-            this.txt_inputSearch.TabIndex = 7;
+            this.lstView_listBookRoom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lstView_listBookRoom.HideSelection = false;
+            this.lstView_listBookRoom.Location = new System.Drawing.Point(3, 117);
+            this.lstView_listBookRoom.Name = "lstView_listBookRoom";
+            this.lstView_listBookRoom.Size = new System.Drawing.Size(1011, 483);
+            this.lstView_listBookRoom.TabIndex = 0;
+            this.lstView_listBookRoom.UseCompatibleStateImageBehavior = false;
+            // 
+            // tabPage_usingService
+            // 
+            this.tabPage_usingService.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage_usingService.Controls.Add(this.lstView_listService);
+            this.tabPage_usingService.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_usingService.Name = "tabPage_usingService";
+            this.tabPage_usingService.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_usingService.Size = new System.Drawing.Size(1017, 603);
+            this.tabPage_usingService.TabIndex = 2;
+            this.tabPage_usingService.Text = "Dịch vụ";
+            // 
+            // lstView_listService
+            // 
+            this.lstView_listService.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lstView_listService.HideSelection = false;
+            this.lstView_listService.Location = new System.Drawing.Point(3, 117);
+            this.lstView_listService.Name = "lstView_listService";
+            this.lstView_listService.Size = new System.Drawing.Size(1011, 483);
+            this.lstView_listService.TabIndex = 0;
+            this.lstView_listService.UseCompatibleStateImageBehavior = false;
+            // 
+            // panel_Info
+            // 
+            this.panel_Info.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel_Info.Controls.Add(this.monthCalendar1);
+            this.panel_Info.Controls.Add(this.label_title);
+            this.panel_Info.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_Info.Location = new System.Drawing.Point(0, 0);
+            this.panel_Info.Name = "panel_Info";
+            this.panel_Info.Size = new System.Drawing.Size(231, 636);
+            this.panel_Info.TabIndex = 1;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.BackColor = System.Drawing.Color.LightBlue;
+            this.monthCalendar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.monthCalendar1.FirstDayOfWeek = System.Windows.Forms.Day.Monday;
+            this.monthCalendar1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.monthCalendar1.Location = new System.Drawing.Point(2, 146);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.TitleForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.LightSkyBlue;
+            // 
+            // label_title
+            // 
+            this.label_title.AutoSize = true;
+            this.label_title.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_title.Location = new System.Drawing.Point(59, 45);
+            this.label_title.Name = "label_title";
+            this.label_title.Size = new System.Drawing.Size(110, 57);
+            this.label_title.TabIndex = 0;
+            this.label_title.Text = "Hotel";
             // 
             // Form1
             // 
